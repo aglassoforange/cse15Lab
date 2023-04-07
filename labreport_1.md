@@ -1,6 +1,6 @@
 # Installing VScode
 
-
+![Image](vscode.png)
 * google online vscode
 * follow the prompt and install Vscode
 
