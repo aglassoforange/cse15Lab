@@ -12,7 +12,10 @@
 
 # Remotely Connecting
 
+![Image](studentID.png)
+
 * the student account can be check online
+* the link of the id is https://sdacs.ucsd.edu/~icc/index.php and the screenshot is provided above.
 * student account should be 9 digit code
 * I am using McOs, thus I don't need to set up anything. I just use my search bar to find terminal
 * Open teriminal and use ssh to connect
