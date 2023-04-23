@@ -42,14 +42,17 @@ import java.net.URI;
 ![Image](vscode.png)
 
 * Which methods in your code are called?
+***
 main method, server.start(),hanldeRequst()
 
 * What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+***
 for main method it need a int input for port number.
 for server.start, it needs portNumber and a new Handler.
 for HandleRequest it needs a uri as a argument and Stringbuilder called mess.
 
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+***
 the value of stringbuilder is changed if the uri read from the browser has "/add-message?s" and it will add the string information after that.
 
 
