@@ -42,42 +42,99 @@ import java.net.URI;
 ![Image](vscode.png)
 
 * Which methods in your code are called?<br />
-  main method, server.start(),hanldeRequst()
+compile the code
+```
+%javac StringServer.java
+%java StringServer <Port Number>
+```
+access the website
+```
+http://localhost:<Port Number>
+```
 
-* What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-***
+main method, server.start(),hanldeRequst()
+  
+
+* What are the relevant arguments to those methods, and the values of any relevant fields of the class?<br />
 for main method it need a int input for port number.
 for server.start, it needs portNumber and a new Handler.
 for HandleRequest it needs a uri as a argument and Stringbuilder called mess.
 
-* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-***
+* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.<br />
 the value of stringbuilder is changed if the uri read from the browser has "/add-message?s" and it will add the string information after that.
 
 
-![Image](remote.png)
 
 # Part 2
+```
+static int[] reversed(int[] arr) { int[] newArray = new int[arr.length]; for(int i = 0; i < arr.length; i += 1) { arr[i] = newArray[arr.length - i - 1]; } return arr; }
+```
+This is the code<br />
 
-*A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
 
-*An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-*The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+*A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)<br />
+```
+ @Test 
+	public void testReverseInPlace() {
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
+	}
+```
+
+![Image](recode.png)
+
+
+As shown above it couldn't return the right value for the corssponding Junit test.
+
+
+*An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)<br />
+```
+	@Test 
+	public void testReverseInPlace() {
+   int[] input1 = { };
+   assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+}
+```
+This input won't trigger a error.
+
+
+*The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)<br />
+![Image](recode.png)
+
 *The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 
-![Image](studentID.png)
+![Image](re.png)
 
-* the student account can be check online
-* the link of the id is https://sdacs.ucsd.edu/~icc/index.php and the screenshot is provided above.
-* student account should be 9 digit code
-* I am using McOs, thus I don't need to set up anything. I just use my search bar to find terminal
-* Open teriminal and use ssh to connect
-* ssh **********@ieng6.ucsd.edu
 
-![Image](terminal.png)
-# Trying Some Commands
-* ls is output the list of this current drictory
-* ls -l means to output more detailed info in this directory
-* pwd  pwd command to find the path of your current working directory
-* cp is copying the file to certain driectory
+Before:<br />
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];  
+    return arr;
+```
+
+
+After:<br />
+
+```
+  static int[] reversed(int[] arr) {
+    int[] b = new int[arr.length];
+    int j = arr.length;
+    for (int i = 0; i < arr.length; i++) {
+        b[j - 1] = arr[i];
+        j = j - 1;
+    }
+    return b;
+```
+Junit Test:<br />
+![Image](testre.png)
+
+The problem is that the value of arr[i] is being assigned tonewArray[arr.length - i - 1]. However, it is oppsite from what we want.
+
+# Part 3 
+
+From the past CSE15L class, I learned alot of things from how to build a simple server and interact with it from browser. I don't know that we could actually start the server by only using  Java excluding from the certian framework.
 
