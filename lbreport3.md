@@ -42,8 +42,7 @@ import java.net.URI;
 ![Image](vscode.png)
 
 * Which methods in your code are called?
-***
-main method, server.start(),hanldeRequst()
+  main method, server.start(),hanldeRequst()
 
 * What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 ***
