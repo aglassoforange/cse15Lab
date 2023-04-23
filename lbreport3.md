@@ -39,7 +39,10 @@ import java.net.URI;
 }
 ```
 
-![Image](vscode.png)
+![Image](server1.png)
+![Image](server2.png)
+![Image](server.png)
+
 
 * Which methods in your code are called?<br />
 compile the code
