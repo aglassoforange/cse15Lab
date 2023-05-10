@@ -38,7 +38,7 @@ example 2:
 
 * - mtime <digit>:this is an option checking all the files that were modified with a period of time. It is important becuase we need to want some file that is just modified. I find this information from ChatGPT.
  
- example 1: 
+ example 1: I change one file using vim. and I could check the modification with ls -l. After confirming my modification, I use mtime -7 chekcing the file that has been modified for past 7 days, I find the file.
 ```
 ❯ find . -mtime -7
 ❯ ls
@@ -74,12 +74,26 @@ total 4432
 .
 ./chapter-1.txt
 ```
- 
- 
-![Image](remote.png)
 
-# Remotely Connecting
-
-![Image](terminal.png)
-# Trying Some Commands
-* ls is output the list of this current drictory
+ example 2: I check the file that was modified in last 20 days, it shows all the file in this directory.
+```
+ ❯ find . -mtime -20
+.
+./chapter-13.4.txt
+./chapter-13.5.txt
+./chapter-13.1.txt
+./chapter-13.2.txt
+./chapter-13.3.txt
+./chapter-3.txt
+./chapter-2.txt
+./chapter-1.txt
+./chapter-5.txt
+./chapter-6.txt
+./chapter-7.txt
+./chapter-9.txt
+./chapter-8.txt
+./preface.txt
+./chapter-12.txt
+./chapter-10.txt
+./chapter-11.txt
+```
