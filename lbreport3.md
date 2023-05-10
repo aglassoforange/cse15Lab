@@ -159,6 +159,12 @@ Junit Test:<br />
 
 The problem is that the value of arr[i] is being assigned tonewArray[arr.length - i - 1]. However, it is oppsite from what we want.
 
+
+correction: adding more detail about the debugging process
+
+The problem of the loop ius that it trying to return a new array with all the e elements of the input array in reversed order, but inside the loop, the value of arr[i] is being assigned to newArray[arr.length - i - 1]. It should be the other way around.
+By fixing it, I just trying to use a singe array to accomplish what we need to do, changing the first index with the last index and so on.
+
 # Part 3 
 
 From the past CSE15L class, I learned alot of things from how to build a simple server and interact with it from browser. I don't know that we could actually start the server by only using  Java excluding from the certian framework.
