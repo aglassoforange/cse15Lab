@@ -97,3 +97,36 @@ total 4432
 ./chapter-10.txt
 ./chapter-11.txt
 ```
+
+* - maxdepth: maxdepth limits the depth of the search to a specfic level. I can only search for two layers of subdirectory.This is important becuase, Sometime I just need to search through specific layers. I find this information from ChatGPT.
+ example 1 :I chekc the file only to the two sublayers of technical folder.
+``` 
+ ❯ find . -maxdepth 2 -type f
+./DocSearchServer.java
+./README.md
+./lib/junit-4.13.2.jar
+./lib/hamcrest-core-1.3.jar
+./Server.java
+./TestDocSearch.java
+```
+ Example 2: I checked the filed only to the one sublayers of techinical folder
+```
+ ./DocSearchServer.java
+./README.md
+./Server.java
+./TestDocSearch.java
+```
+ 
+ * -size <file size>: search the files based on the size. it is important that I could search based on file's szie. I find this information from ChatGPT.
+Example 1: I checked the file size smaller than 1 kb.
+```
+ ❯ find . -size -1k  -type f
+./README.md
+./TestDocSearch.java
+./technical/plos/pmed.0020191.txt
+./technical/plos/pmed.0020226.txt
+```
+ Example 2:I checked the filed size larger than 1Mb
+ ``` 
+ ❯ find . -size +1M  -type f
+ ```
