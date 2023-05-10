@@ -135,18 +135,24 @@ Before:<br />
     return arr;
 ```
 
-
+Correction: do it without creating new array
 After:<br />
 
 ```
-  static int[] reversed(int[] arr) {
-    int[] b = new int[arr.length];
-    int j = arr.length;
-    for (int i = 0; i < arr.length; i++) {
-        b[j - 1] = arr[i];
-        j = j - 1;
+  static int[] reversed(int[] arr) {    
+    int fast = 0;
+    int end = arr.length - 1;
+    
+    while(fast < end){
+    	int temp = arr[fast];
+	  arr[fast] = arr[end]; 
+	  arr[end] = temp;
+      fast +=1;
+      end -=1;
     }
-    return b;
+   
+    return arr;
+    
 ```
 Junit Test:<br />
 ![Image](testre.png)
