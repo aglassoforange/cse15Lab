@@ -1,5 +1,5 @@
-# I choose find as my command </br>
-#   - name: this is an option to find a specific name or name patern. This is useful becuase you could use it as a filter to find the file with the keyword you want. I find this option using ChatGPT.</br>
+# I choose find as my command 
+#   - name: this is an option to find a specific name or name patern. This is useful becuase you could use it as a filter to find the file with the keyword you want. I find this option using ChatGPT.
 example 1:
 ```
  find . -name "*.txt"
