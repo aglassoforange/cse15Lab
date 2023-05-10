@@ -145,10 +145,10 @@ After:<br />
     
     while(fast < end){
     	int temp = arr[fast];
-	  arr[fast] = arr[end]; 
-	  arr[end] = temp;
-      fast +=1;
-      end -=1;
+	arr[fast] = arr[end]; 
+	arr[end] = temp;
+      	fast +=1;
+      	end -=1;
     }
    
     return arr;
