@@ -1,5 +1,5 @@
 # I choose find as my command </br>
-*  - name: this is an option to find a specific name or name patern. This is useful becuase you could use it as a filter to find the file with the keyword you want. I find this option using ChatGPT.</br>
+#   - name: this is an option to find a specific name or name patern. This is useful becuase you could use it as a filter to find the file with the keyword you want. I find this option using ChatGPT.</br>
 example 1:
 ```
  find . -name "*.txt"
@@ -36,7 +36,7 @@ example 2:
 ./chapter-11.txt
 ```
 
-* - mtime <digit>:this is an option checking all the files that were modified with a period of time. It is important becuase we need to want some file that is just modified. I find this information from ChatGPT.
+#  - mtime <digit>:this is an option checking all the files that were modified with a period of time. It is important becuase we need to want some file that is just modified. I find this information from ChatGPT.
  
  example 1: I change one file using vim. and I could check the modification with ls -l. After confirming my modification, I use mtime -7 chekcing the file that has been modified for past 7 days, I find the file.
 ```
@@ -98,7 +98,7 @@ total 4432
 ./chapter-11.txt
 ```
 
-* - maxdepth: maxdepth limits the depth of the search to a specfic level. I can only search for two layers of subdirectory.This is important becuase, Sometime I just need to search through specific layers. I find this information from ChatGPT.
+#  - maxdepth: maxdepth limits the depth of the search to a specfic level. I can only search for two layers of subdirectory.This is important becuase, Sometime I just need to search through specific layers. I find this information from ChatGPT.
  example 1 :I chekc the file only to the two sublayers of technical folder.
 ``` 
  ❯ find . -maxdepth 2 -type f
@@ -117,7 +117,7 @@ total 4432
 ./TestDocSearch.java
 ```
  
- * -size <file size>: search the files based on the size. it is important that I could search based on file's szie. I find this information from ChatGPT.
+ #  -size <file size>: search the files based on the size. it is important that I could search based on file's szie. I find this information from ChatGPT.
 Example 1: I checked the file size smaller than 1 kb.
 ```
  ❯ find . -size -1k  -type f
