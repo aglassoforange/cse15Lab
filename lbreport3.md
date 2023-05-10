@@ -63,6 +63,22 @@ for main method it need a int input for port number.
 for server.start, it needs portNumber and a new Handler.
 for HandleRequest it needs a uri as a argument and Stringbuilder called mess.
 
+Correction(adding more details):
+For this method called, the main method and the handleRequest in the Handler class are used.
+The URL output  is
+```
+http://localhost:2530/add-message?s=My%Name%is%David
+```
+The string array, parameters are created when splitted with '='{s,My Name is David}. In this case the parameter[0] is "s" and parameter[1] is "My Name is David".
+So the StringBuilder changed  and String "My Name is David" is appended which changes the StringBuilder becomes "My Name is David"
+
+The URL output  is
+```
+http://localhost:2530/add-message?s=Apple
+```
+Calling second method, the main method and the handleRequest in the handler class are used. The URL output remains http://localhost:2530/add-message?s=Apple (from handleRequest method) from input, the string array, parameters are created when splitting with "=" as {s, Apple}. Thus, parameter[0] is "s" and parameter[1] is "Apple", so the stringBuilder append with "Apple".
+
+
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.<br />
 the value of stringbuilder is changed if the uri read from the browser has "/add-message?s" and it will add the string information after that.
 
