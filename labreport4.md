@@ -1,23 +1,22 @@
-![Image](server1.png)
-![Image](server2.png)
-![Image](server.png)
+![Image](lab4_1.png)
 
+* Log into ieng6 <br />
 
-* Which methods in your code are called?<br />
-compile the code
 ```
-%javac StringServer.java
-%java StringServer <Port Number>
-```
-access the website
-```
-http://localhost:<Port Number>
+Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter>
 ```
 
-main method, server.start(),hanldeRequst()
-  
+![Image](lab4_2.png)
 
-* What are the relevant arguments to those methods, and the values of any relevant fields of the class?<br />
-for main method it need a int input for port number.
-for server.start, it needs portNumber and a new Handler.
-for HandleRequest it needs a uri as a argument and Stringbuilder called mess.
+* Clone your fork of the repository from your Github account<br />
+
+```
+go to github, and press ssh categroy and copy the link. SSH is better because I have set up SSH key during class, and I don't need to input the password.
+Keys pressed: git clone git@github.com:aglassoforange/lab7.git<enter>
+```
+
+
+![Image](lab4_2.png)
+* Run the tests, demonstrating that they fail <br />
+
+
