@@ -1,6 +1,17 @@
 # I choose find as my command 
-#   - name: this is an option to find a specific name or name patern. This is useful because you could use it as a filter to find the file with the keyword you want. I find this option using ChatGPT.
+#   - name: this is an option to find a specific name or name patern. This is useful because you could use it as a filter to find the file with the keyword you want. I find this option using ChatGPT. Correction: below is my prompt and how I modified with the response from chatGPT.
+
+Prompt: find command line option
+Response:
+-name : This option is used to search for files/directories by name.
+Example: find /path/to/directory -name "filename"
+
+I changed from using exact string to find corresponding files to use * to find a larger scope of names and files.
+
 example 1:
+* correction:small description about what I am testing.
+Use -name to provide a pattern to find the corresponding files.
+This command is to find the file's name ending with .txt
 ```
  find . -name "*.txt"
 ./chapter-13.4.txt
@@ -22,7 +33,9 @@ example 1:
 ./chapter-11.txt
 ```
 
+* correction:small description about what I am testing.
 example 2:
+
 ```
 ❯ find . -name "*1*.txt"
 ./chapter-13.4.txt
