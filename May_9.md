@@ -8,7 +8,7 @@ Example: find /path/to/directory -name "filename"
 I changed from using exact string to find corresponding files to use * to find a larger scope of names and files.
 
 example 1:
-* correction:small description about what I am testing.
+* correction: description about what I am testing.
 Use -name to provide a pattern to find the corresponding files.
 This command is to find the file's name ending with .txt
 ```
