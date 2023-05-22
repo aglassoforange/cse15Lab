@@ -55,7 +55,7 @@ I am trying to find the file with 1 in it. adding a star in the front and behind
 ChatGPT's response:  
  -mtime : This option is used to find files/directories modified within the last 'n' days.  
 Example: find /path/to/directory -mtime -7 (Files modified in the last 7 days)  
- I change the number of the day, I want to check.  
+ I change the number of the day.    
  correction:  
  example 1: I change one file using vim. and I could check the modification with ls -l. After confirming my modification, I use mtime -7 chekcing the file that has been modified for past 7 days, I find the file.  
 ```
@@ -118,11 +118,11 @@ total 4432
 ```
 
 #  - maxdepth: maxdepth limits the depth of the search to a specfic level. I can only search for two layers of subdirectory.This is important becuase, Sometime I just need to search through specific layers. I find this information from ChatGPT.
- Prompt: find command line option
- Response: The -maxdepth option is used with the find command in Unix/Linux systems to limit the depth of directories that the command will traverse.
- I changed the number of layers that I want to check.
+ Prompt: find command line option  
+ Response: The -maxdepth option is used with the find command in Unix/Linux systems to limit the depth of directories that the command will traverse.  
+ I changed the number of layers that I want to check.  
  
- example 1 :I check the file only to the two sublayers of technical folder.
+ example 1 :I check the file only to the two sublayers of technical folder.  
 ``` 
  ❯ find . -maxdepth 2 -type f
 ./DocSearchServer.java
@@ -143,14 +143,14 @@ total 4432
  #  -size <file size>: search the files based on the size. it is important that I could search based on file's szie. I find this information from ChatGPT.
  
  -size : This option is used to find files/directories of a specific size.
-Example: find /path/to/directory -size +1M (Files larger than 1MB)
+Example: find /path/to/directory -size +1M (Files larger than 1MB)  
  
- Prompt: find command line option
- Response: -size : This option is used to find files/directories of a specific size.
-Example: find /path/to/directory -size +1M (Files larger than 1MB)
- I change the size of the file.
+ Prompt: find command line option  
+ Response: -size : This option is used to find files/directories of a specific size.  
+Example: find /path/to/directory -size +1M (Files larger than 1MB)  
+ I change the size of the file.  
  
-Example 1: I checked the file size smaller than 1 kb. It shows the file that is smaller than 1kb.
+Example 1: I checked the file size smaller than 1 kb. It shows the file that is smaller than 1kb.  
 ```
  ❯ find . -size -1k  -type f
 ./README.md
