@@ -158,7 +158,7 @@ Example 1: I checked the file size smaller than 1 kb. It shows the file that is 
 ./technical/plos/pmed.0020191.txt
 ./technical/plos/pmed.0020226.txt
 ```
- Example 2:I checked the filed size larger than 1Mb.
+ Example 2:I checked the filed size larger than 1Mb.The output is nothing because there is no file larger than 1mb.
  ``` 
  ❯ find . -size +1M  -type f
  ```
