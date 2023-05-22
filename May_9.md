@@ -50,7 +50,7 @@ I am trying to find the file with 1 in it. adding a star in the front and behind
 ```
 
 #  - mtime <digit>:this is an option checking all the files that were modified with a period of time. It is important becuase we need to want some file that is just modified. I find this information from ChatGPT.
- Correction:
+ Correction:</ br>
  my prompt is find command line option
 ChatGPT's response:
  -mtime : This option is used to find files/directories modified within the last 'n' days.
