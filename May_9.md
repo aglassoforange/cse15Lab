@@ -35,7 +35,7 @@ This command is to find the file's name ending with .txt
 
 * correction:small description about what I am testing.
 example 2:
-
+I am trying to find the file with 1 in it. adding a star in the front and behind would repsent n characters.
 ```
 ❯ find . -name "*1*.txt"
 ./chapter-13.4.txt
@@ -50,7 +50,13 @@ example 2:
 ```
 
 #  - mtime <digit>:this is an option checking all the files that were modified with a period of time. It is important becuase we need to want some file that is just modified. I find this information from ChatGPT.
- 
+ Correction:
+ my prompt is find command line option
+ChatGPT's response:
+ -mtime : This option is used to find files/directories modified within the last 'n' days.
+Example: find /path/to/directory -mtime -7 (Files modified in the last 7 days)
+ I change the number of the day, I want to check.
+ correction:
  example 1: I change one file using vim. and I could check the modification with ls -l. After confirming my modification, I use mtime -7 chekcing the file that has been modified for past 7 days, I find the file.
 ```
 ❯ find . -mtime -7
@@ -112,7 +118,11 @@ total 4432
 ```
 
 #  - maxdepth: maxdepth limits the depth of the search to a specfic level. I can only search for two layers of subdirectory.This is important becuase, Sometime I just need to search through specific layers. I find this information from ChatGPT.
- example 1 :I chekc the file only to the two sublayers of technical folder.
+ Prompt: find command line option
+ Response: The -maxdepth option is used with the find command in Unix/Linux systems to limit the depth of directories that the command will traverse.
+ I changed the number of layers that I want to check.
+ 
+ example 1 :I check the file only to the two sublayers of technical folder.
 ``` 
  ❯ find . -maxdepth 2 -type f
 ./DocSearchServer.java
@@ -131,7 +141,16 @@ total 4432
 ```
  
  #  -size <file size>: search the files based on the size. it is important that I could search based on file's szie. I find this information from ChatGPT.
-Example 1: I checked the file size smaller than 1 kb.
+ 
+ -size : This option is used to find files/directories of a specific size.
+Example: find /path/to/directory -size +1M (Files larger than 1MB)
+ 
+ Prompt: find command line option
+ Response: -size : This option is used to find files/directories of a specific size.
+Example: find /path/to/directory -size +1M (Files larger than 1MB)
+ I change the size of the file.
+ 
+Example 1: I checked the file size smaller than 1 kb. It shows the file that is smaller than 1kb.
 ```
  ❯ find . -size -1k  -type f
 ./README.md
@@ -139,7 +158,7 @@ Example 1: I checked the file size smaller than 1 kb.
 ./technical/plos/pmed.0020191.txt
 ./technical/plos/pmed.0020226.txt
 ```
- Example 2:I checked the filed size larger than 1Mb
+ Example 2:I checked the filed size larger than 1Mb.
  ``` 
  ❯ find . -size +1M  -type f
  ```
