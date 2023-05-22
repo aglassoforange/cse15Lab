@@ -132,8 +132,9 @@ total 4432
 ./Server.java
 ./TestDocSearch.java
 ```
- Example 2: I checked the filed only to the one sublayers of techinical folder
+ Example 2: I checked the filed only to the one sublayers of techinical folder. There are fewer files comparing to last time.
 ```
+  ❯ find . -maxdepth 1 -type f
  ./DocSearchServer.java
 ./README.md
 ./Server.java
