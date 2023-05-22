@@ -3,7 +3,7 @@
 * Log into ieng6 <br />
 
 ```
-Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter>
+Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter> Because we generated SSH keys for ieng6. We don't need to type the password to log in to the server.
 ```
 
 ![Image](lab4_2.png)
@@ -17,9 +17,11 @@ Keys pressed: git clone git@github.com:aglassoforange/lab7.git<enter>
 
 
 ![Image](lab4_3.png)
+
 * Run the tests, demonstrating that they fail <br />
 
 ```
+cd lab7: go to the driectory lab7.
 running the test script
 Key pressed:sh test.sh<enter>
 ```
@@ -33,7 +35,7 @@ Key pressed:vim ListExamples.java<Enter>
 enter line 44：
 <esc>:44 
 get to character "1":
-<right><right><right><right><right>
+<l><l><l><l><l> move cursor to right
 change "1" to "2":
 r2
 save file:
