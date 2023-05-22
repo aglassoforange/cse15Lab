@@ -3,7 +3,8 @@
 * Log into ieng6 <br />
 
 ```
-Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter> Because we generated SSH keys for ieng6. We don't need to type the password to log in to the server.
+Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter>
+Because we generated SSH keys for ieng6. We don't need to type the password to log in to the server.
 ```
 
 ![Image](lab4_2.png)
@@ -11,7 +12,8 @@ Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter> Because we generated S
 * Clone your fork of the repository from your Github account<br />
 
 ```
-go to github, and press ssh categroy and copy the link. SSH is better because I have set up SSH key during class, and I don't need to input the password.
+go to github, and press ssh categroy and copy the link.
+SSH is better because I have set up SSH key during class, and I don't need to input the password.
 Keys pressed: git clone git@github.com:aglassoforange/lab7.git<enter>
 ```
 
@@ -54,6 +56,9 @@ Key pressed:sh test.sh<enter>
 Key pressed:git add ListExamples.java<enter>
 git push<enter>
 ```
-git push command is to upload local commits to remote repository, and it is the repository in my github account. Since I do sure about the existence of the repository. I didn't add -u flags or origin main to indicate the repository and branch name. Everything I modified will be uploaded to defualt branch and repository which are lab7 and main branch.
+git push command is to upload local commits to remote repository, 
+and it is the repository in my github account. Since I do sure about the existence of the repository.
+I didn't add -u flags or origin main to indicate the repository and branch name.
+Everything I modified will be uploaded to defualt branch and repository which are lab7 and main branch.
 
 
