@@ -50,14 +50,14 @@ I am trying to find the file with 1 in it. adding a star in the front and behind
 ```
 
 #  - mtime <digit>:this is an option checking all the files that were modified with a period of time. It is important becuase we need to want some file that is just modified. I find this information from ChatGPT.
- Correction:</ br>
- my prompt is find command line option
-ChatGPT's response:
- -mtime : This option is used to find files/directories modified within the last 'n' days.
-Example: find /path/to/directory -mtime -7 (Files modified in the last 7 days)
- I change the number of the day, I want to check.
- correction:
- example 1: I change one file using vim. and I could check the modification with ls -l. After confirming my modification, I use mtime -7 chekcing the file that has been modified for past 7 days, I find the file.
+ Correction:  
+ my prompt is find command line option  
+ChatGPT's response:  
+ -mtime : This option is used to find files/directories modified within the last 'n' days.  
+Example: find /path/to/directory -mtime -7 (Files modified in the last 7 days)  
+ I change the number of the day, I want to check.  
+ correction:  
+ example 1: I change one file using vim. and I could check the modification with ls -l. After confirming my modification, I use mtime -7 chekcing the file that has been modified for past 7 days, I find the file.  
 ```
 ❯ find . -mtime -7
 ❯ ls
