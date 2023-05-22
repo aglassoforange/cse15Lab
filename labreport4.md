@@ -31,8 +31,6 @@ Key pressed:sh test.sh<enter>
 
 ![Image](lab4_4.png)
 * change ListExamples.java's code
-
-
 Key pressed:vim ListExamples.java<Enter> 
 enter line 44：
 <esc>:44 
