@@ -32,7 +32,7 @@ This command is to find the file's name ending with .txt
 ./chapter-11.txt
 ```
 
-* correction:small description about what I am testing.
+* correction: small description about what I am testing.  
 example 2:
 I am trying to find the file with 1 in it. adding a star in the front and behind would repsent n characters.
 ```
