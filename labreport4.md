@@ -1,11 +1,15 @@
 ![Image](lab4_1.png)
 
 * Log into ieng6 <br />
-
+ ```
 Keys pressed: ssh<space>cs15lsp23ob@ieng6.ucsd.edu<enter>
+ ```
+ ```
 Because we generated SSH keys for ieng6. 
+ ```
+ ```
 We don't need to type the password to log in to the server.
-
+ ```
 ![Image](lab4_2.png)
 
 * Clone your fork of the repository from your Github account<br />
