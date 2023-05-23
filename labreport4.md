@@ -35,6 +35,7 @@ Key pressed:sh test.sh<enter>
 
 ![Image](lab4_4.png)
 * change ListExamples.java's code
+ 
  ```
 Key pressed:vim ListExamples.java<Enter> 
 enter line 44：
@@ -46,6 +47,7 @@ r2
 save file:
 <esc>:wq <enter>
 ```
+ 
 ![Image](lab4_7.png)
 * retest the code:
 
