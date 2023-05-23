@@ -18,8 +18,9 @@ We don't need to type the password to log in to the server.
 go to github, and press ssh categroy and copy the link.
 SSH is better because I have set up SSH key during class,
 and I don't need to input the password.
+```
 Keys pressed: git clone git@github.com:aglassoforange/lab7.git<enter>
-
+```
 
 
 ![Image](lab4_3.png)
@@ -32,6 +33,16 @@ running the test script
 Key pressed:sh test.sh<enter>
 ```
 
-
-
-
+![Image](lab4_4.png)
+* change ListExamples.java's code
+```
+Key pressed:vim ListExamples.java<Enter> 
+enter line 44：
+<esc>:44 
+get to character "1":
+<l><l><l><l><l> move cursor to right
+change "1" to "2":
+r2
+save file:
+<esc>:wq <enter>
+```
