@@ -62,8 +62,10 @@ Key pressed:sh test.sh<enter>
 Key pressed:git add ListExamples.java<enter>
 git push<enter>
 git push command is to upload local commits to remote repository, 
-and it is the repository in my github account. Since I do sure about the existence of the repository.
+and it is the repository in my github account. 
+Since I do sure about the existence of the repository.
 I didn't add -u flags or origin main to indicate the repository and branch name.
-Everything I modified will be uploaded to defualt branch and repository which are lab7 and main branch.
+Everything I modified will be uploaded to defualt branch and
+repository which are lab7 and main branch.
 ```
 
