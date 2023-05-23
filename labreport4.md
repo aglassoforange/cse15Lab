@@ -34,6 +34,7 @@ Key pressed:sh test.sh<enter>
 ```
 
 ![Image](lab4_4.png)
+* Change Index1 to Index2 <br />
 
 ```
 Key pressed: vim ListExamples.java<Enter> 
@@ -46,3 +47,23 @@ r2
 save file:
 <esc>:wq <enter>
 ```
+
+![Image](lab4_7.png)
+* Restest the code <br />
+```
+runing the test script
+Key pressed:sh test.sh<enter>
+```
+
+
+![Image](lab4_8.png)
+* Update changes to github. I don't need to input the password <br />
+```
+Key pressed:git add ListExamples.java<enter>
+git push<enter>
+git push command is to upload local commits to remote repository, 
+and it is the repository in my github account. Since I do sure about the existence of the repository.
+I didn't add -u flags or origin main to indicate the repository and branch name.
+Everything I modified will be uploaded to defualt branch and repository which are lab7 and main branch.
+```
+
