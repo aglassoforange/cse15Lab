@@ -34,6 +34,7 @@ Key pressed:sh test.sh<enter>
 ```
 
 ![Image](lab4_4.png)
+* Run the tests, demonstrating that they fail <br />
 
 ```
 Key pressed: vim ListExamples.java<Enter> 
